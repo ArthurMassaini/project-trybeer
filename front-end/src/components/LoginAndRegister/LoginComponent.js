@@ -23,8 +23,8 @@ function LoginComponent({
           placeholder="Email"
           name="email"
           data-testid="email-input"
-          value={ email }
-          onChange={ (e) => onInputChange(e) }
+          value={email}
+          onChange={(e) => onInputChange(e)}
         />
         <span>Senha</span>
         <Form.Input
@@ -35,27 +35,24 @@ function LoginComponent({
           type="password"
           name="password"
           data-testid="password-input"
-          value={ password }
-          onChange={ (e) => onInputChange(e) }
+          value={password}
+          onChange={(e) => onInputChange(e)}
         />
-
         <Button
           color="blue"
           fluid
-          size="large"
           data-testid="signin-btn"
-          onClick={ () => onHandleSubmit() }
-          disabled={ validateInputs() }
+          onClick={() => onHandleSubmit()}
+          disabled={validateInputs()}
         >
           Entrar
         </Button>
-
+        <br />
         <Button
           color="blue"
           fluid
-          size="large"
           data-testid="no-account-btn"
-          onClick={ () => history.push('/register') }
+          onClick={() => history.push('/register')}
         >
           Ainda não tenho conta
         </Button>
